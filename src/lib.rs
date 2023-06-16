@@ -9,7 +9,8 @@ pub struct Config {
 }
 
 impl Config {
-    pub fn build(mut args: impl Iterator<Item = String>) -> Result<Config, &'static str> {
+    pub fn build(mut args: impl Iterator<Item = String>,
+    ) -> Result<Config, &'static str> {
         // --snip--
         args.next();
 
